@@ -27,9 +27,9 @@ export default defineConfig({
         text: 'var(--color-text)'
       },
       fontSize: {
-        'xs': ['1rem', '1.3rem'],
-        'sm': ['1.1rem', '1.5rem'],
-        'base': ['1.2rem', '1.6rem'],
+        'xs': ['0.9rem', '1.2rem'],
+        'sm': ['1rem', '1.4rem'],
+        'base': ['1.1rem', '1.5rem'],
       }
     }
   },
