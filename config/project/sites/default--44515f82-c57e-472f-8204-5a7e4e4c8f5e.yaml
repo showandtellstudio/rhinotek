@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-AE
+name: Rhinotek
+primary: true
+siteGroup: 41ad2098-28cf-4a3c-88ac-e0bbb0bb92c2 # Rhinotek
+sortOrder: 1

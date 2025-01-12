@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - aa8dd9af-3672-424c-acff-9ddc7a4ac92d # Page
+handle: home
+maxAuthors: 1
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  44515f82-c57e-472f-8204-5a7e4e4c8f5e: # Rhinotek
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/index
+    uriFormat: __home__
+type: single

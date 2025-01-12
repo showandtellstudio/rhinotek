@@ -1,0 +1,39 @@
+{
+    "name": "cloudgrayau/base",
+    "description": "Project base custom functions",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "base"
+    ],
+    "support": {
+        "docs": "",
+        "issues": ""
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cloud Gray",
+            "homepage": "https://cloudgray.com.au/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "cloudgrayau\\base\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Base",
+        "handle": "base",
+        "developer": "Cloud Gray",
+        "developerUrl": "https://cloudgray.com.au/",
+        "class": "cloudgrayau\\base\\Base"
+    }
+}

@@ -1,0 +1,10 @@
+h1 {
+  margin: 1rem 0 1.5rem 0;
+  @apply font-mayenne text-4xl md:text-5xl;
+  line-height: 1.4 !important;
+}
+h2 {
+  margin: 2rem 0 1.5rem 0;
+  font-weight: 600;
+  @apply text-3xl md:text-4xl;
+}

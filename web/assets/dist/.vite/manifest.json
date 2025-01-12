@@ -1,0 +1,73 @@
+{
+  "src/fonts/Arada-Bold.otf": {
+    "file": "fonts/Arada-Bold-CMhkq3oo.otf",
+    "src": "src/fonts/Arada-Bold.otf"
+  },
+  "src/fonts/Arada-Bold.woff": {
+    "file": "fonts/Arada-Bold-BexflJJs.woff",
+    "src": "src/fonts/Arada-Bold.woff"
+  },
+  "src/fonts/Arada-Bold.woff2": {
+    "file": "fonts/Arada-Bold-CqkjO4Ld.woff2",
+    "src": "src/fonts/Arada-Bold.woff2"
+  },
+  "src/fonts/Arada-Light.otf": {
+    "file": "fonts/Arada-Light-g_lm-kmv.otf",
+    "src": "src/fonts/Arada-Light.otf"
+  },
+  "src/fonts/Arada-Light.woff": {
+    "file": "fonts/Arada-Light-BOE0roOB.woff",
+    "src": "src/fonts/Arada-Light.woff"
+  },
+  "src/fonts/Arada-Light.woff2": {
+    "file": "fonts/Arada-Light-Cvkw5aZL.woff2",
+    "src": "src/fonts/Arada-Light.woff2"
+  },
+  "src/fonts/Arada-Regular.otf": {
+    "file": "fonts/Arada-Regular-nK4mRy5b.otf",
+    "src": "src/fonts/Arada-Regular.otf"
+  },
+  "src/fonts/Arada-Regular.woff": {
+    "file": "fonts/Arada-Regular-BRVvSzV-.woff",
+    "src": "src/fonts/Arada-Regular.woff"
+  },
+  "src/fonts/Arada-Regular.woff2": {
+    "file": "fonts/Arada-Regular-BDHMAl9l.woff2",
+    "src": "src/fonts/Arada-Regular.woff2"
+  },
+  "src/fonts/Mayenne-Sans-Regular.otf": {
+    "file": "fonts/Mayenne-Sans-Regular-C07mKcKi.otf",
+    "src": "src/fonts/Mayenne-Sans-Regular.otf"
+  },
+  "src/fonts/Mayenne-Sans-Regular.woff": {
+    "file": "fonts/Mayenne-Sans-Regular-Gnfmf-TP.woff",
+    "src": "src/fonts/Mayenne-Sans-Regular.woff"
+  },
+  "src/fonts/Mayenne-Sans-Regular.woff2": {
+    "file": "fonts/Mayenne-Sans-Regular-BZKbBxO5.woff2",
+    "src": "src/fonts/Mayenne-Sans-Regular.woff2"
+  },
+  "src/js/rhinotek.ts": {
+    "file": "app-BuPef8Gk.js",
+    "name": "app",
+    "src": "src/js/rhinotek.ts",
+    "isEntry": true,
+    "css": [
+      "css/app-CAp7SwYb.css"
+    ],
+    "assets": [
+      "fonts/Arada-Light-Cvkw5aZL.woff2",
+      "fonts/Arada-Light-BOE0roOB.woff",
+      "fonts/Arada-Light-g_lm-kmv.otf",
+      "fonts/Arada-Regular-BDHMAl9l.woff2",
+      "fonts/Arada-Regular-BRVvSzV-.woff",
+      "fonts/Arada-Regular-nK4mRy5b.otf",
+      "fonts/Arada-Bold-CqkjO4Ld.woff2",
+      "fonts/Arada-Bold-BexflJJs.woff",
+      "fonts/Arada-Bold-CMhkq3oo.otf",
+      "fonts/Mayenne-Sans-Regular-BZKbBxO5.woff2",
+      "fonts/Mayenne-Sans-Regular-Gnfmf-TP.woff",
+      "fonts/Mayenne-Sans-Regular-C07mKcKi.otf"
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{% extends '_layout/main' %}
+{% block main %}
+<section class="bg-white">
+  <div class="py-8 md:py-12">
+    <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6" data-sr>
+      <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
+        <div class="col w-full px-6 lg:px-8 md:w-2/3 3xl:w-1/3 max-w-screen-sm">
+          <h1>Safety without compromise</h1>
+          <p>Rhinotek is an innovative building supply company specialising in the supply of certified, high-quality fire protection products and consultancy services. With warehouse and distribution facilities in Dubai, Sharjah and Abu Dhabi, we offer live-tracked inventory control and a seamless ordering process for our clients.</p>
+          <p><strong>Prevent, Protect, Preserve</strong> with Rhinotek.</p>
+        </div>
+        <div class="col w-full px-6 lg:px-8 3xl:w-1/2">
+          <p class="text-xs"># Insert Certifications &amp; Accreditations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-8 md:py-12 bg-white border-t border-text border-solid">
+    <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6" data-sr>
+      <div class="row flex flex-wrap flex-row-reverse -mx-6 lg:-mx-8 items-center">
+        <div class="col w-full px-6 lg:px-8 md:w-1/3">
+          <p class="text-sm">Discover cutting-edge solutions with Rhinotek – delivering unmatched innovation, quality, and performance for your business needs.</p>
+        </div>
+        <div class="col w-full px-6 lg:px-8 md:w-2/3 mt-4 md:mt-0">
+          <div class="row flex flex-wrap -mx-8" data-counters>
+            <div class="col px-8 flex flex-wrap items-center">
+              <p>{{ svg('images/icons/products.svg')|attr({class:'block h-14 mr-4'}) }}</p>
+              <p><strong><span data-counter>1000</span>+</strong><br>Products</p>
+            </div>
+            <div class="col px-8 flex flex-wrap items-center">
+              <p>{{ svg('images/icons/suppliers.svg')|attr({class:'block h-14 mr-4'}) }}</p>
+              <p><strong><span data-counter>25</span></strong><br>Suppliers</p>
+            </div>
+            <div class="col px-8 flex flex-wrap items-center">
+              <p>{{ svg('images/icons/countries.svg')|attr({class:'block h-14 mr-4'}) }}</p>
+              <p><strong>Global Supply Chain</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="break" data-break>
+  <div class="paralax">
+    <img src="images/break.jpg" alt="Rhinotek">
+    <div class="py-8 md:py-12 relative z-2 text-white h-full carousel">
+      <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 h-full">
+        <div class="row flex flex-wrap -mx-6 lg:-mx-8 h-full items-end">
+          <div class="col w-full px-6 lg:px-8 max-w-screen-sm">
+            <div id="hsplide" class="splide">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <p>Discover cutting-edge solutions with Rhinotek – delivering unmatched innovation, quality, and performance for your business needs.</p>
+                  </div>
+                  <div class="splide__slide">
+                    <p>Rhinotek is an established service provider based in Melbourne, Australia delivering a wide range of products that focus on the Fire Protection Industry.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-8 md:py-12 bg-white">
+  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6" id="about-us" data-sr>
+    <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
+      <div class="col w-full px-6 lg:px-8 md:w-1/2 lg:w-2/5">
+        <h2>About Us</h2>
+        <p>Rhinotek commenced operations in the UAE from a 300,000 square foot warehouse facility located in Aljada, Sharjah and continue to evolve as a leader in the supply of fire protection products and consultancy services.</p>
+        <p>Rhinotek invest heavily in our fully operating on-site R&D facility that features a fully functioning fire system. Here, we invite our customers, authorities and licensing agencies to try, test and train alongside our factory trained staff.</p>
+        <p>Our products are specifically designed, engineered, and manufactured with stringent quality protocols in mind and our facilities feature state-of-the-art ordering, packing and dispatch technology that streamline and fast track the whole ordering and receiving experience for our clients.</p>
+        <p>Rhinotek ensure all its staff receive both training and education at the manufacturers’ facilities, whether in Australia, Europe or Asia, and we invest heavily to ensure our staff are experts in each and every product we stock.</p>
+        <p>In addition, Rhinotek ensures that each of our own manufacturing facilities around the world, as well as our partners’ facilities, are inspected on a quarterly basis by our own internal inspectors and third-party ISO inspectors with batch testing conducted on each product line.</p>
+        <p>We are excited to be able to bring to the UAE market a home-grown, 100% UAE-owned and operated operation that is staffed with a team of dedicated and internationally experienced engineers, managers and industrial designers.</p>
+      </div>
+      <div class="col w-full px-6 lg:px-8 md:w-1/2 lg:w-1/2">
+        <p><img src="images/about.jpg" alt="About Rhinotek"></p>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6" id="services" data-sr>
+    <div class="row flex flex-wrap -mx-6 lg:-mx-8">
+      <div class="col w-full px-6 lg:px-8">
+        <h2>Services</h2>
+        <div class="row flex flex-wrap my-8 -mx-1" data-services data-accordion>
+          
+          <div class="col w-full px-1 md:w-1/3 xl:w-1/5 active" data-item>
+            <div class="service toggle flex flex-col text-center">
+              <p class="mb-auto">{{ svg('images/icons/sprinkler-head.svg') }}</p>
+              <h3>Sprinkler Head Testing</h3>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Proin auctor rhoncus rutrum. Cras tempor mollis leo nec luctus. Etiam vel nulla eros. Suspendisse potenti. Sed ex nisi, lobortis vel justo ut, pharetra malesuada augue. Sed at lorem eros. Aliquam erat volutpat. Quisque ac nisi molestie, aliquam lacus ut, posuere ex. Praesent sagittis, eros in auctor consectetur, turpis libero placerat tellus, id rhoncus sem nunc vel arcu. In volutpat non nisi ac efficitur. </p>
+                  <p>Proin auctor rhoncus rutrum. Cras tempor mollis leo nec luctus. Etiam vel nulla eros. Suspendisse potenti. Sed ex nisi, lobortis vel justo ut, pharetra malesuada augue. Sed at lorem eros. Aliquam erat volutpat. Quisque ac nisi molestie, aliquam lacus ut, posuere ex. Praesent sagittis, eros in auctor consectetur, turpis libero placerat tellus, id rhoncus sem nunc vel arcu. In volutpat non nisi ac efficitur. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col w-full px-1 md:w-1/3 xl:w-1/5" data-item>
+            <div class="service toggle flex flex-col text-center">
+              <p class="mb-auto">{{ svg('images/icons/auditing.svg') }}</p>
+              <h3>Auditing</h3>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col w-full px-1 md:w-1/3 xl:w-1/5" data-item>
+            <div class="service toggle flex flex-col text-center">
+              <p class="mb-auto">{{ svg('images/icons/training.svg') }}</p>
+              <h3>Training</h3>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col w-full px-1 md:w-1/3 xl:w-1/5" data-item>
+            <div class="service toggle flex flex-col text-center">
+              <p class="mb-auto">{{ svg('images/icons/full-function.svg') }}</p>
+              <h3>Full Function Testing</h3>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col w-full px-1 md:w-1/3 xl:w-1/5" data-item>
+            <div class="service toggle flex flex-col text-center">
+              <p class="mb-auto">{{ svg('images/icons/consultancy.svg') }}</p>
+              <h3>Consultancy</h3>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

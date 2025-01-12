@@ -1,0 +1,63 @@
+dateModified: 1736466395
+email:
+  fromEmail: aaron@cloudgray.com.au
+  fromName: Rhinotek
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  dist:
+    hasUrls: true
+    name: Dist
+    settings:
+      path: '@webroot/uploads/dist'
+    type: craft\fs\Local
+    url: '@web/uploads/dist/'
+  system:
+    hasUrls: false
+    name: System
+    settings:
+      path: '@webroot/uploads/system'
+    type: craft\fs\Local
+    url: null
+meta:
+  __names__:
+    41ad2098-28cf-4a3c-88ac-e0bbb0bb92c2: Rhinotek # Rhinotek
+    44515f82-c57e-472f-8204-5a7e4e4c8f5e: Rhinotek # Rhinotek
+    aa8dd9af-3672-424c-acff-9ddc7a4ac92d: Page # Page
+    bef29958-2c41-4c43-a849-40d5ce94f727: System # System
+    e077d1c9-1b61-4d32-8470-97b5de567ba8: 'Public Schema' # Public Schema
+    f5de7a7b-f3e6-4d2c-8b66-c1bebe2e3edd: Home # Home
+plugins:
+  base:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cleantalk:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  csp:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  pitch:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Rhinotek
+  retryDuration: null
+  schemaVersion: 5.5.0.0
+  timeZone: Asia/Dubai
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: bef29958-2c41-4c43-a849-40d5ce94f727 # System
+  require2fa: false
+  requireEmailVerification: true

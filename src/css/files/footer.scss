@@ -1,0 +1,90 @@
+#footer {
+  a:hover {
+    color: rgba(255,255,255,0.8);
+  }
+}
+#faq {
+  div[data-accordion] {
+    margin: 2rem 0 2.5rem 0;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 1.5rem;
+    &:last-child {
+      margin-bottom: 1.5rem;
+    }
+    div[data-item] {
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      &:first-child {
+        .toggle {
+          padding-top: 0;
+        }
+      }
+      &.active {
+        .toggle {
+          font-weight: 600;
+        }
+        .toggle svg {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .toggle {
+      font-weight: 300;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      @apply text-lg;
+      &:hover {
+        opacity: 0.8;
+      }
+      @apply py-5;
+      span:first-child {
+        display: block;
+        width: calc(100% - 3.5rem);
+      }
+      span:last-child {
+        display: block;
+        width: 3.5rem;
+        text-align: right;
+      }
+      svg {
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+        margin-right: 2rem;
+        transform-origin: 20px;
+        path:first-child {
+          opacity: 0.8;
+        }
+      }
+    }
+    .element {
+      @apply -mt-10 py-5 md:pr-12 text-sm;
+    }
+  }
+}
+
+div[data-accordion] {
+  div[data-item] {
+    &:not(.active) .spread {
+      max-height: 0 !important;
+      overflow: hidden;
+    }
+  }
+  .spread {
+    transition: max-height 0.5s ease;
+    @apply max-w-screen-lg;
+  }
+  [data-height] {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    p:first-child {
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

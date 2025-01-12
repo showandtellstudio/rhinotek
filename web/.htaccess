@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Pitch advanced cache rewrite
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI} -s
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteRule .* /cache/%{REQUEST_URI} [L]
+
+    # Route 404s to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php [L]
+</IfModule>

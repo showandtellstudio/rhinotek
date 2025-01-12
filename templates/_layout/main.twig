@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+{% include('_theme/_head') %}
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="text-base">
+<div id="wrapper">
+<div id="wrap">
+{% include('_inc/header') %}
+<main id="structure">
+{% block main %}{% endblock %}
+</main>
+</div>
+{% include('_inc/footer') %}
+</div>
+{% include('_theme/_foot') %}
+</body>
+</html>

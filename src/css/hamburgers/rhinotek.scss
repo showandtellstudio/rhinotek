@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@use "base" with (
+  $hamburger-padding-x: 0.5rem,
+  $hamburger-padding-y: 0.5rem,
+  $hamburger-layer-width: 2rem,
+  $hamburger-layer-height: 0.225rem,
+  $hamburger-layer-spacing: 0.35rem,
+  $hamburger-layer-color: #fff,
+  $hamburger-layer-border-radius: 0.25rem,
+  $hamburger-hover-opacity: 0.8,
+  $hamburger-active-layer-color: #fff,
+  $hamburger-active-hover-opacity: 0.8,
+  $hamburger-hover-use-filter: false,
+  $hamburger-hover-filter: opacity(50%),
+  $hamburger-active-hover-filter: opacity(50%)
+);
+@use "types/spring-r"  with (
+  $hamburger-padding-x: 0.5rem,
+  $hamburger-padding-y: 0.5rem,
+  $hamburger-layer-width: 2rem,
+  $hamburger-layer-height: 0.225rem,
+  $hamburger-layer-spacing: 0.35rem,
+  $hamburger-layer-color: #fff,
+  $hamburger-layer-border-radius: 0.25rem,
+  $hamburger-hover-opacity: 0.8,
+  $hamburger-active-layer-color: #fff,
+  $hamburger-active-hover-opacity: 0.8,
+  $hamburger-hover-use-filter: false,
+  $hamburger-hover-filter: opacity(50%),
+  $hamburger-active-hover-filter: opacity(50%)
+);

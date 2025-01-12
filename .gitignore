@@ -1,0 +1,8 @@
+/.env
+/.idea
+/src/_certificate
+/node_modules
+/vendor
+/web/cache
+/web/uploads
+.DS_Store
