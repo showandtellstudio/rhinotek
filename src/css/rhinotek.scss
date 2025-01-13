@@ -75,9 +75,9 @@ blockquote {
     background: rgb(235,235,235);
     position: relative;
     @apply text-sm;
-    @screen @m {
+    /*@screen @m {
       background: rgba(235,235,235,0.6);
-    }
+    }*/
   }
   .spread {
     transition: max-height 0.5s ease, opacity 0.5s ease;
