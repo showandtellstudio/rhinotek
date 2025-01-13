@@ -29,7 +29,7 @@ export default defineConfig({
       fontSize: {
         'xs': ['0.9rem', '1.2rem'],
         'sm': ['1rem', '1.4rem'],
-        'base': ['1.1rem', '1.5rem'],
+        'base': ['1.05rem', '1.45rem'],
         'lg': ['1.2rem', '1.6rem'],
       }
     }
