@@ -15,7 +15,10 @@
       }
       &.active {
         .toggle {
-          font-weight: 600;
+          strong {
+            font-weight: 600;
+            color: rgb(218, 43, 31);
+          }
         }
         .toggle svg {
           transform: rotate(90deg);
