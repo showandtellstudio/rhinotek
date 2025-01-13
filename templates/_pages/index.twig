@@ -2,7 +2,7 @@
 {% block main %}
 <section class="bg-white">
   <div class="py-8 md:py-12">
-    <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" data-sr>
+    <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 max-w-screen-2xl" data-sr>
       <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
         <div class="col w-full px-6 lg:px-8 max-w-screen-sm md:w-1/2">
           <h1>Safety without compromise</h1>
@@ -10,17 +10,18 @@
           <p><strong>Prevent, Protect, Preserve</strong> with Rhinotek.</p>
         </div>
         <div class="col w-full px-6 lg:px-8 md:w-1/2">
-          <div class="row flex flex-wrap -mx-2 justify-start md:justify-end">
-            <div class="col px-2"><p>{{ svg('images/logo/lpcb-vector-logo.svg')|attr({class:'h-20'}) }}</p></div>
-            <div class="col px-2"><p>{{ svg('images/logo/ul.svg')|attr({class:'h-20'}) }}</p></div>
-            <div class="col px-2"><p>{{ svg('images/logo/fm-vector-logo.svg')|attr({class:'h-20'}) }}</p></div>
+          <div class="row flex flex-wrap -mx-4 md:-mx-6 justify-start md:justify-end">
+            <div class="col px-4 md:px-6 w-full md:text-right"><p>Our accreditations</p></div>
+            <div class="col px-4 md:px-6">{{ svg('images/logo/lpcb-vector-logo.svg')|attr({class:'h-20 md:h-24'}) }}</div>
+            <div class="col px-4 md:px-6">{{ svg('images/logo/ul.svg')|attr({class:'h-20 md:h-24'}) }}</div>
+            <div class="col px-4 md:px-6">{{ svg('images/logo/fm-vector-logo.svg')|attr({class:'h-20 md:h-24'}) }}</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="py-8 md:py-12 bg-white border-t border-text border-solid">
-    <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" data-sr>
+    <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 max-w-screen-2xl" data-sr>
       <div class="row flex flex-wrap -mx-6 lg:-mx-8 items-center">
         <div class="col w-full px-6 lg:px-8 md:w-2/3 mt-4 md:mt-0">
           <div class="row flex flex-wrap -mx-8" data-counters>
@@ -46,7 +47,7 @@
   <div class="paralax">
     <img src="images/break.jpg" width="3840" height="1300" alt="Rhinotek" loading="lazy">
     <div class="py-8 md:py-12 relative z-2 text-white h-full carousel">
-      <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 h-full max-w-screen-2xl">
+      <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 h-full max-w-screen-2xl">
         <div class="row flex flex-wrap -mx-6 lg:-mx-8 h-full items-end">
           <div class="col w-full px-6 lg:px-8 max-w-screen-sm">
             <div id="hsplide" class="splide">
@@ -68,9 +69,9 @@
   </div>
 </section>
 <section class="py-8 md:py-12 bg-white">
-  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" id="about" data-sr>
+  <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 max-w-screen-2xl" id="about" data-sr>
     <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
-      <div class="col w-full px-6 lg:px-8 md:w-1/2">
+      <div class="col w-full px-6 lg:px-8 md:w-1/2 xl:w-3/5">
         <h2>About Us</h2>
         <p>Rhinotek began operations in the UAE from a 300,000-square-foot warehouse in Aljada, Sharjah, and has since grown into a leader in the supply of fire protection products and consultancy services.</p>
         <p>The company invests heavily in its on-site R&D facility, equipped with a fully operational fire system, where customers, authorities, and licensing agencies are invited to test, train, and collaborate alongside factory-trained staff.</p>
@@ -81,12 +82,12 @@
           <p>Proudly 100% UAE-owned and operated, Rhinotek is staffed by a dedicated team of internationally experienced engineers, managers, and industrial designers, bringing innovative and reliable fire protection solutions to the UAE market.</p>
         </div>
       </div>
-      <div class="col w-full px-6 lg:px-8 md:w-1/2">
+      <div class="col w-full px-6 lg:px-8 md:w-1/2 xl:w-2/5">
         <p><img src="images/about.jpg" width="1469" height="2251" alt="About Rhinotek" loading="lazy"></p>
       </div>
     </div>
   </div>
-  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" id="products" data-sr>
+  <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 max-w-screen-2xl" id="products" data-sr>
     <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
       <div class="col w-full px-6 lg:px-8">
         <h2>Product Categories</h2>
@@ -148,7 +149,7 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" id="services" data-sr>
+  <div class="container mx-auto p-4 px-6 md:px-8 lg:px-12 md:py-6 max-w-screen-2xl" id="services" data-sr>
     <div class="row flex flex-wrap -mx-6 lg:-mx-8">
       <div class="col w-full px-6 lg:px-8">
         <h2>Services</h2>
@@ -162,8 +163,7 @@
             <div class="element">
               <div class="spread">
                 <div data-height>
-                  <p>Proin auctor rhoncus rutrum. Cras tempor mollis leo nec luctus. Etiam vel nulla eros. Suspendisse potenti. Sed ex nisi, lobortis vel justo ut, pharetra malesuada augue. Sed at lorem eros. Aliquam erat volutpat. Quisque ac nisi molestie, aliquam lacus ut, posuere ex. Praesent sagittis, eros in auctor consectetur, turpis libero placerat tellus, id rhoncus sem nunc vel arcu. In volutpat non nisi ac efficitur. </p>
-                  <p>Proin auctor rhoncus rutrum. Cras tempor mollis leo nec luctus. Etiam vel nulla eros. Suspendisse potenti. Sed ex nisi, lobortis vel justo ut, pharetra malesuada augue. Sed at lorem eros. Aliquam erat volutpat. Quisque ac nisi molestie, aliquam lacus ut, posuere ex. Praesent sagittis, eros in auctor consectetur, turpis libero placerat tellus, id rhoncus sem nunc vel arcu. In volutpat non nisi ac efficitur. </p>
+                  <p>Our dedicated team are available to perform sprinkler head life expectancy batch testing using state-of-the-art ISO-certified testing equipment, delivering clear, easy-to-understand reports with precise and well-defined results.</p>
                 </div>
               </div>
             </div>
@@ -189,7 +189,7 @@
             <div class="element">
               <div class="spread">
                 <div data-height>
-                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                  <p>Our fully operational live fire system training facility provides our clients with comprehensive training on the latest products and materials, ensuring professionals stay updated with cutting-edge fire protection technologies and practices.</p>
                 </div>
               </div>
             </div>
