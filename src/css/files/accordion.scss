@@ -1,8 +1,3 @@
-#footer {
-  a:hover {
-    color: rgba(255,255,255,0.8);
-  }
-}
 #faq {
   div[data-accordion] {
     margin: 2rem 0 2.5rem 0;
@@ -119,7 +114,6 @@
         transform-origin: 20px;
         path:first-child {
           opacity: 0.8;
-          stroke: var(--color-text);
         }
       }
     }

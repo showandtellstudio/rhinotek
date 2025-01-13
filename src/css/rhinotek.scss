@@ -4,7 +4,7 @@
 @use '/src/css/files/headings.scss';
 @use '/src/css/files/header.scss';
 @use '/src/css/files/nav.scss';
-@use '/src/css/files/footer.scss';
+@use '/src/css/files/accordion.scss';
 @use '/src/css/hamburgers/rhinotek.scss';
 
 #wrapper {
@@ -183,6 +183,12 @@ blockquote {
   .splide__arrow--next {
     right: auto;
     left: 4em;
+  }
+}
+
+#footer {
+  a:hover {
+    color: rgba(255,255,255,0.8);
   }
 }
 
