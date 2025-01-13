@@ -26,7 +26,7 @@
   position: relative;
   z-index: 49;
   @screen @m {
-    max-width: 12rem;
+    max-width: 10rem !important;
   }
   a:link, a:visited, a:active {
     color: #fff;
