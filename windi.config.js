@@ -30,6 +30,7 @@ export default defineConfig({
         'xs': ['0.9rem', '1.2rem'],
         'sm': ['1rem', '1.4rem'],
         'base': ['1.1rem', '1.5rem'],
+        'lg': ['1.2rem', '1.6rem'],
       }
     }
   },

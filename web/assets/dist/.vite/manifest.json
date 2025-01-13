@@ -48,12 +48,12 @@
     "src": "src/fonts/Mayenne-Sans-Regular.woff2"
   },
   "src/js/rhinotek.ts": {
-    "file": "app-lDQGvw-W.js",
+    "file": "app-r1SaWArZ.js",
     "name": "app",
     "src": "src/js/rhinotek.ts",
     "isEntry": true,
     "css": [
-      "css/app-BxffKxAz.css"
+      "css/app-BjOhUNs6.css"
     ],
     "assets": [
       "fonts/Arada-Light-Cvkw5aZL.woff2",

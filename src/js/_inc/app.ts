@@ -581,14 +581,14 @@ class FormValidator {
   document.addEventListener('DOMContentLoaded', function(event) {    
     window.fireEvent('domready');
   });
-  window.addEventListener('hashchange', function(event){
+  /*window.addEventListener('hashchange', function(event){
     let hash = document.location.hash.substr(2);
     if ($(hash)){
       scroll({
         top: $(hash).offsetTop
       });
     };
-  });
+  });*/
   window.Asset = {
     javascript: function(source, properties){
       if (!properties){ properties = {}; };

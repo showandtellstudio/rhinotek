@@ -23,9 +23,21 @@
   width: 100%;
   max-width: 15rem;
   transition: max-width 0.2s ease;
+  position: relative;
+  z-index: 49;
   @screen @m {
     max-width: 12rem;
   }
+  a:link, a:visited, a:active {
+    color: #fff;
+  }
+  a:hover {
+    color: rgba(255,255,255,0.8);
+  }
+}
+
+html.init #logo a {
+  transition: color 0.2s ease;
 }
 
 #bar {
@@ -35,15 +47,12 @@
   }
   &.fix {
     .bar {
-      background: rgba(0,0,0,0.5);
+      background: color-mix(in srgb, var(--color-primary) 50%, transparent);
       position: fixed;
       top: 0;
     }
     #logo {
       max-width: 12rem;
-      @screen @m {
-        max-width: 10rem;
-      }
     }
   }
 }

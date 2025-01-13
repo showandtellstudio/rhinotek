@@ -1,11 +1,28 @@
 <a class="sr-only" href="#structure" aria-label="Skip to main content">Skip to main content</a>
 <header id="header" class="relative bg-gray-100">
-  <div id="bar" class="absolute w-full py-8 md:py-12 text-white z-50">
+  <div id="bar" class="absolute w-full py-2 md:py-12 text-white z-50">
     <div class="bar w-full z-50 py-4">
       <div class="container mx-auto px-6 lg:px-8">
-        <div id="logo"><a href="{{ siteUrl }}">{{ svg('images/logo/rhinotek.svg') }}</a></div>
+        <div class="row flex flex-wrap -mx-6 lg:-mx-8 items-center">
+          <div class="col w-full px-6 lg:px-8 w-2/3 lg:w-1/3">
+            <div id="logo"><a href="{{ siteUrl }}">{{ svg('images/logo/rhinotek.svg') }}</a></div>
+          </div>
+          <div class="col w-full px-6 lg:px-8 w-1/3 lg:w-2/3 text-right">
+            <div id="nav-toggle" class="pt-1">
+              <div class="hamburger hamburger--spring-r align-middle"><div class="hamburger-box block"><div class="hamburger-inner"></div></div></div>
+            </div>
+            <nav id="primary" class="uppercase text-base">
+              <menu>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/services">Services</a></li>
+                <li class="catalogue"><a href="files/rhinotek-catalogue.pdf" target="_blank">Download Catalogue</a></li>
+              </menu>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="paralax"><img src="images/header.jpg" alt="Rhinotek"></div>
+  <div class="paralax"><img src="images/header.jpg" width="3840" height="1524" alt="Rhinotek"></div>
 </header>

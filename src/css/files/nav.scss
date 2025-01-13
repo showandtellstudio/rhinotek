@@ -1,0 +1,91 @@
+#nav-toggle {
+  position: relative;
+  z-index: 49;
+  @screen lg {
+    display: none;
+  }
+}
+
+#primary {
+  menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+  }
+  li {
+    margin: 0 0 0 2.5rem;
+    padding: 0;
+    @screen xl {
+      margin-left: 3rem;
+    }
+  }
+  a {
+    color: rgba(255,255,255,0.8);
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
+  }
+  li.catalogue a {
+    @apply text-xs;
+    background: rgba(255,255,255,0.9);
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--color-primary);
+    &:hover {
+      background: var(--color-primary);
+      color: #fff;
+    }
+  }
+}
+
+@screen @l {
+  #primary {
+    position: absolute;
+    z-index: 40;
+    width: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
+    top: 0;
+    right: 0;
+    background: var(--color-primary);
+    transform: translateX(100%);
+    menu {
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      padding-top: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    li {
+      margin: 1rem 0;
+      @apply text-2xl;
+      a {
+        color: #fff;
+      }
+      &.catalogue {
+        margin-top: 1.5rem;
+        a {
+          background: #fff !important;
+          color: var(--color-primary) !important;
+          @apply text-sm;
+        }
+      }
+    }
+  }
+  #wrapper.mactive {
+    overflow: hidden;
+    #primary {
+      transform: translateX(0%);
+    }
+  }
+  html.init #primary {
+    transition: transform 0.5s ease;
+  }
+}
+

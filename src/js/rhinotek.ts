@@ -33,20 +33,9 @@ import '/src/css/rhinotek.scss'
     
     let hash = document.location.hash.substr(2);
     if ($(hash)){
-      window.scrollTo(0, ($(hash).getBoundingClientRect().top+window.scrollY)-$('bar').offsetHeight+1);
+      window.scrollTo(0, ($(hash).getBoundingClientRect().top+window.scrollY)-80);
     };
-    
-    /*let backtop = new Create('div', {
-      id: 'backtop'
-    }).addClass('sticky').set('html', '<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.014 11.998c0 5.517 4.48 9.997 9.998 9.997s9.997-4.48 9.997-9.997c0-5.518-4.479-9.998-9.997-9.998s-9.998 4.48-9.998 9.998zm6.211-1.524s1.505-1.501 3.259-3.254c.146-.147.338-.22.53-.22s.384.073.53.22c1.754 1.752 3.258 3.254 3.258 3.254.145.145.217.335.217.526 0 .192-.074.384-.221.53-.292.293-.766.295-1.057.004l-1.977-1.977v6.693c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-6.693l-1.979 1.978c-.289.289-.761.287-1.054-.006-.147-.147-.221-.339-.222-.53 0-.191.071-.38.216-.525z" fill-rule="nonzero" fill="currentColor" /></svg>').inject($('footer'), 'top');
-    backtop.addEvent('click', function(e){
-      if (this.hasClass('bt')){
-        window.scrollTo(0,0);
-      }
-    });
-    doScroll();
-    window.addEvent('scroll', doScroll);
-    window.addEvent('resize', doScroll);*/
+
     doScroll();
     window.addEvent('scroll', doScroll);
     window.addEvent('resize', doScroll);
@@ -96,8 +85,9 @@ import '/src/css/rhinotek.scss'
       duration: 1200,
       origin: 'bottom',
       scale: 0.8,
-      mobile: false,
+      mobile: true,
       beforeReveal: function (el){
+        el.set('data-sr-id', null);
       },
       afterReveal: function(el){
         el.set('data-sr', null);
@@ -182,6 +172,25 @@ import '/src/css/rhinotek.scss'
         }
       });
     };
+    let items = $('primary').getElements('li:not(.catalogue) a');
+    items.forEach(function(obj){
+      obj.addEvent('click', function(e){
+        e.preventDefault();
+        let link = this.get('href').substr(2);
+        if ($(link)){
+          let sr = $(link).get('data-sr-id');
+          if (sr){
+            let top = $(link).getBoundingClientRect().top - (($(link).offsetHeight / 8) - 18);
+            window.scrollTo(0, (top+window.scrollY)-80);
+          } else {
+            window.scrollTo(0, ($(link).getBoundingClientRect().top+window.scrollY)-80);
+          }
+          window.location.hash = '#/'+link;
+          $('wrapper').removeClass('mactive');
+          $('nav-toggle').getElement('.hamburger').removeClass('is-active');
+        };
+      });
+    });
   }
   let doHeight = function(){
     let elements = $$('div[data-height]');
