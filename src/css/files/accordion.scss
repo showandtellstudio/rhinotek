@@ -15,10 +15,7 @@
       }
       &.active {
         .toggle {
-          strong {
-            font-weight: 600;
-            color: rgb(218, 43, 31);
-          }
+          font-weight: 600;
         }
         .toggle svg {
           transform: rotate(90deg);
@@ -80,7 +77,10 @@
       }
       &.active {
         .toggle {
-          font-weight: 600;
+          color: rgb(218, 43, 31);
+          strong {
+            font-weight: 600;
+          }
         }
         .toggle svg {
           transform: rotate(90deg);
