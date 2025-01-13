@@ -34,7 +34,7 @@
     @apply text-sm;
     border: 1px solid #fff;
     display: block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.25rem;
     color: #fff;
     &:hover {
       opacity: 0.8;
@@ -51,7 +51,7 @@
     top: 0;
     right: 0;
     background: var(--color-primary);
-    transform: translateY(-100vh);
+    transform: translateX(100%);
     menu {
       display: flex;
       flex-flow: column;
@@ -82,7 +82,7 @@
   #wrapper.mactive {
     overflow: hidden;
     #primary {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     #logo a {
       color: #fff;
@@ -97,7 +97,7 @@
     }
   }
   html.init #primary {
-    transition: transform 0.4s ease;
+    transition: transform 0.6s ease;
   }
 }
 
