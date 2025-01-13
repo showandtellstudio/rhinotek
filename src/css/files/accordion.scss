@@ -1,4 +1,4 @@
-#faq {
+#datasheets {
   div[data-accordion] {
     margin: 2rem 0 2.5rem 0;
     border-top: 1px solid rgba(255,255,255,0.5);
@@ -57,6 +57,9 @@
     }
     .element {
       @apply -mt-10 py-5 md:pr-12 text-sm;
+      strong {
+        color: rgb(218, 43, 31);
+      }
     }
   }
 }
