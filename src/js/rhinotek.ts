@@ -33,7 +33,7 @@ import '/src/css/rhinotek.scss'
     
     let hash = document.location.hash.substr(2);
     if ($(hash)){
-      window.scrollTo(0, ($(hash).getBoundingClientRect().top+window.scrollY)-80);
+      window.scrollTo(0, ($(hash).getBoundingClientRect().top+window.scrollY)-75);
     };
 
     doScroll();
@@ -129,6 +129,11 @@ import '/src/css/rhinotek.scss'
       });
     });
     
+    $('backtop').getElement('a').addEvent('click', function(e){
+      e.preventDefault();
+      window.scrollTo(0, 0);
+    });
+    
   }
   let doCounters = function(){
     var cc = [];
@@ -189,9 +194,9 @@ import '/src/css/rhinotek.scss'
           let sr = $(link).get('data-sr-id');
           if (sr){
             let top = $(link).getBoundingClientRect().top - (($(link).offsetHeight / 8) - 18);
-            window.scrollTo(0, (top+window.scrollY)-80);
+            window.scrollTo(0, (top+window.scrollY)-75);
           } else {
-            window.scrollTo(0, ($(link).getBoundingClientRect().top+window.scrollY)-80);
+            window.scrollTo(0, ($(link).getBoundingClientRect().top+window.scrollY)-75);
           }
           window.location.hash = '#/'+link;
           $('wrapper').removeClass('mactive');
