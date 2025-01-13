@@ -36,12 +36,14 @@
   }
 }
 
-html.init {
-  #logo a {
-    transition: color 0.2s ease;
-  }
-  #icon {
-    transition: fill 0.2s ease;
+@screen md {
+  html.init {
+    #logo a {
+      transition: color 0.2s ease;
+    }
+    #icon {
+      transition: fill 0.2s ease;
+    }
   }
 }
 
