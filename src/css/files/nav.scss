@@ -31,14 +31,13 @@
     }
   }
   li.catalogue a {
-    @apply text-xs;
+    @apply text-sm;
     border: 1px solid #fff;
     display: block;
     padding: 0.5rem 1.5rem;
     color: #fff;
     &:hover {
-      background: #fff;
-      color: var(--color-primary);
+      opacity: 0.8;
     }
   }
 }
@@ -74,7 +73,8 @@
         a {
           border: 1px solid #fff !important;
           color: #fff;
-          @apply text-sm;
+          opacity: 1 !important;
+          @apply text-base;
         }
       }
     }

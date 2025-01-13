@@ -4,10 +4,13 @@
   <div class="py-8 md:py-12">
     <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" data-sr>
       <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
-        <div class="col w-full px-6 lg:px-8 max-w-screen-sm">
+        <div class="col w-full px-6 lg:px-8 max-w-screen-sm md:w-1/2">
           <h1>Safety without compromise</h1>
           <p>Rhinotek is an innovative building materials supply company specialising in the supply of certified, high-quality building services products and consulting. With warehouse and distribution facilities in Dubai, Sharjah and Abu Dhabi, we offer live-tracked inventory control and a seamless ordering process for our clients.</p>
           <p><strong>Prevent, Protect, Preserve</strong> with Rhinotek.</p>
+        </div>
+        <div class="col w-full px-6 lg:px-8 md:w-1/2">
+          <p class="text-xs"># Insert Certifications &amp; Accreditations</p>
         </div>
       </div>
     </div>
@@ -23,16 +26,13 @@
             </div>
             <div class="col px-8 flex flex-wrap items-center">
               <p>{{ svg('images/icons/suppliers.svg')|attr({class:'block h-14 mr-4'}) }}</p>
-              <p><strong><span data-counter>25</span></strong><br>Suppliers</p>
+              <p><strong><span data-counter>25</span>+</strong><br>Suppliers</p>
             </div>
             <div class="col px-8 flex flex-wrap items-center">
               <p>{{ svg('images/icons/countries.svg')|attr({class:'block h-14 mr-4'}) }}</p>
               <p><strong>Global Supply Chain</strong></p>
             </div>
           </div>
-        </div>
-        <div class="col w-full px-6 lg:px-8 md:w-1/3">
-          <p class="text-xs"># Insert Certifications &amp; Accreditations</p>
         </div>
       </div>
     </div>
@@ -66,16 +66,81 @@
 <section class="py-8 md:py-12 bg-white">
   <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" id="about" data-sr>
     <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
-      <div class="col w-full px-6 lg:px-8 md:w-1/2 lg:w-2/5">
+      <div class="col w-full px-6 lg:px-8 md:w-1/2">
         <h2>About Us</h2>
         <p>Rhinotek began operations in the UAE from a 300,000-square-foot warehouse in Aljada, Sharjah, and has since grown into a leader in the supply of fire protection products and consultancy services.</p>
         <p>The company invests heavily in its on-site R&D facility, equipped with a fully operational fire system, where customers, authorities, and licensing agencies are invited to test, train, and collaborate alongside factory-trained staff.</p>
-        <p>Rhinotek’s products are meticulously designed, engineered, and manufactured under strict quality protocols. Its advanced facilities feature state-of-the-art ordering, packing, and dispatch technology to ensure an efficient and streamlined experience for clients.</p>
-        <p>All Rhinotek staff undergo comprehensive training and education at manufacturers’ facilities across Australia, Europe, and Asia, ensuring expertise in every stocked product. Quarterly inspections by internal and third-party ISO inspectors, along with batch testing, guarantee consistent quality across Rhinotek’s and its partners’ manufacturing facilities worldwide.</p>
-        <p>Proudly 100% UAE-owned and operated, Rhinotek is staffed by a dedicated team of internationally experienced engineers, managers, and industrial designers, bringing innovative and reliable fire protection solutions to the UAE market.</p>
+        <p class="md:hidden"><a href="#" class="read">Read more</a></p>
+        <div class="hidden md:block">
+          <p>Rhinotek’s products are meticulously designed, engineered, and manufactured under strict quality protocols. Its advanced facilities feature state-of-the-art ordering, packing, and dispatch technology to ensure an efficient and streamlined experience for clients.</p>
+          <p>All Rhinotek staff undergo comprehensive training and education at manufacturers’ facilities across Australia, Europe, and Asia, ensuring expertise in every stocked product. Quarterly inspections by internal and third-party ISO inspectors, along with batch testing, guarantee consistent quality across Rhinotek’s and its partners’ manufacturing facilities worldwide.</p>
+          <p>Proudly 100% UAE-owned and operated, Rhinotek is staffed by a dedicated team of internationally experienced engineers, managers, and industrial designers, bringing innovative and reliable fire protection solutions to the UAE market.</p>
+        </div>
       </div>
-      <div class="col w-full px-6 lg:px-8 md:w-1/2 lg:w-1/2">
-        <p><img src="images/about.jpg" width="1200" height="705" alt="About Rhinotek" loading="lazy"></p>
+      <div class="col w-full px-6 lg:px-8 md:w-1/2">
+        <p><img src="images/about.jpg" width="1469" height="2251" alt="About Rhinotek" loading="lazy"></p>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto p-4 px-6 lg:px-8 md:py-6 max-w-screen-2xl" id="products" data-sr>
+    <div class="row flex flex-wrap -mx-6 lg:-mx-8 justify-between">
+      <div class="col w-full px-6 lg:px-8">
+        <h2>Product Categories</h2>
+        <div class="text-left text-base" data-accordion>
+          <div data-item class="active">
+            <div class="toggle">
+              <span>Fire - Catalogue available</span>
+              <span>{{ svg('images/icons/toggle.svg') }}</span>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                  <p><a href="files/rhinotek-catalogue.pdf" class="button" target="_blank"><small>Download catalogue</small></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-item>
+            <div class="toggle">
+              <span>Electrical - Catalogue coming Q4 2025</span>
+              <span>{{ svg('images/icons/toggle.svg') }}</span>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-item>
+            <div class="toggle">
+              <span>Electrical - Catalogue coming Q4 2025</span>
+              <span>{{ svg('images/icons/toggle.svg') }}</span>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-item>
+            <div class="toggle">
+              <span>Electrical - Catalogue coming Q4 2025</span>
+              <span>{{ svg('images/icons/toggle.svg') }}</span>
+            </div>
+            <div class="element">
+              <div class="spread">
+                <div data-height>
+                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -107,7 +172,7 @@
             <div class="element">
               <div class="spread">
                 <div data-height>
-                  <p>Aenean ante velit, sagittis eu efficitur a, malesuada eget leo. Suspendisse quis ullamcorper nibh, id aliquet dolor. Ut congue, urna vitae feugiat tempor, erat magna porttitor ligula, rhoncus elementum purus arcu sit amet augue. Sed ultrices consequat arcu a iaculis. Sed interdum euismod purus, vitae mattis nisi elementum a. Donec sit amet nulla justo. Aenean a neque sed velit laoreet pharetra. Praesent mattis orci ac fermentum varius. </p>
+                  <p>Our team of professionals conduct thorough audits between practical completion and final inspection / handover of your building project, identifying any shortfalls to mitigate defects before final certification is obtained.</p>
                 </div>
               </div>
             </div>

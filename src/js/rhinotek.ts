@@ -121,6 +121,14 @@ import '/src/css/rhinotek.scss'
     });
     splide.mount();
     
+    $$('a.read').forEach(function(obj){
+      obj.addEvent('click', function(e){
+        e.preventDefault();
+        this.parentNode.parentNode.getElement('.hidden').removeClass('hidden');
+        this.parentNode.dispose();
+      });
+    });
+    
   }
   let doCounters = function(){
     var cc = [];
