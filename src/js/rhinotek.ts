@@ -191,13 +191,7 @@ import '/src/css/rhinotek.scss'
         e.preventDefault();
         let link = this.get('href').substr(2);
         if ($(link)){
-          let sr = $(link).get('data-sr-id');
-          if (sr){
-            let top = $(link).getBoundingClientRect().top - (($(link).offsetHeight / 8) - 18);
-            window.scrollTo(0, (top+window.scrollY)-75);
-          } else {
-            window.scrollTo(0, ($(link).getBoundingClientRect().top+window.scrollY)-75);
-          }
+          window.scrollTo(0, ($(link).getBoundingClientRect().top+window.scrollY)-75);
           window.location.hash = '#/'+link;
           $('wrapper').removeClass('mactive');
           $('nav-toggle').getElement('.hamburger').removeClass('is-active');
