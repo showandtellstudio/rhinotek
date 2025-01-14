@@ -58,6 +58,18 @@
     .element {
       @apply -mt-10 py-5 md:pr-12 text-xs;
     }
+    a.block {
+      position: relative;
+      padding-bottom: 141.5%;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 #products {
