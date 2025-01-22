@@ -8,3 +8,9 @@ h2 {
   font-weight: 600;
   @apply text-2xl md:text-3xl;
 }
+
+h4 {
+  margin: 2rem 0 1rem 0;
+  @apply text-base;
+  font-weight: 400;
+}

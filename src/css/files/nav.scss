@@ -39,6 +39,16 @@
     &:hover {
       opacity: 0.8;
     }
+    @screen lg {
+      svg {
+        display: none;
+      }
+    }
+    @screen xl {
+      svg {
+        display: inline-block;
+      }
+    }
   }
 }
 
