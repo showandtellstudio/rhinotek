@@ -192,7 +192,7 @@ blockquote {
   }
 }
 
-a.button {
+a.button, span.button {
   @apply text-sm;
   border: 1px solid var(--color-text);
   display: inline-block;

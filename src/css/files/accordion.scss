@@ -160,6 +160,9 @@
         .toggle svg {
           transform: rotate(90deg);
         }
+        .highlights {
+          display: none;
+        }
       }
     }
     .toggle {
@@ -197,6 +200,12 @@
     }
     .element {
       @apply -mt-10 py-5 md:pr-12 text-sm;
+    }
+  }
+  .highlights {
+    margin-bottom: 25px;
+    .button {
+      cursor: pointer;
     }
   }
 }

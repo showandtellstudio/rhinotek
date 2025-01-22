@@ -134,6 +134,12 @@ import '/src/css/rhinotek.scss'
       window.scrollTo(0, 0);
     });
     
+    $$('#news .highlights span').forEach(function(obj){
+      obj.addEvent('click', function(e){
+        this.parentNode.parentNode.getElement('.toggle').fireEvent('click');
+      });
+    });
+    
   }
   let doCounters = function(){
     var cc = [];
