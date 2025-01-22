@@ -161,7 +161,12 @@
           transform: rotate(90deg);
         }
         .highlights {
-          display: none;
+          small {
+            display: inline;
+            &:first-child {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -204,6 +209,9 @@
   }
   .highlights {
     margin-bottom: 25px;
+    small:last-child {
+      display: none;
+    }
     .button {
       cursor: pointer;
     }
