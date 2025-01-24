@@ -247,6 +247,7 @@ p.news {
   transition: opacity 0.2s ease;
   &.selected {
     opacity: 0;
+    pointer-events: none;
   }
   @screen @m {
     bottom: 0;
