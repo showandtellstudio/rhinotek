@@ -61,6 +61,7 @@ import '/src/css/rhinotek.scss'
     
     doNav();
     doCounters();
+    doCookies();
     
     let accordion = $$('[data-accordion] .toggle');
     if (accordion.length > 0){
@@ -217,6 +218,34 @@ import '/src/css/rhinotek.scss'
     let rect = $('bar').getElement('.bar').getBoundingClientRect();
     if (rect.top <= 0){
       $('bar').addClass('fix');
+    }
+  }
+  let doCookies = function(){
+    const storage = window.localStorage;
+    if (storage.getItem('cookiedate') !== null){
+      let date = new Date();
+      let diff = (Math.abs(date.getTime() - storage.getItem('cookiedate'))) / (1000 * 60 * 60 * 24);
+      if (diff >= 30){
+        storage.removeItem('cookie');
+      }
+    }
+    if (storage.getItem('cookie') == null){
+      $('cookies').removeClass('hidden');
+      $('cookies').getElement('span[data-accept]').addEvent('click', function(e){
+        $('cookies').addClass('selected');
+        storage.setItem('cookie', 'yes');
+        storage.setItem('cookiedate', new Date().getTime());
+        allConsentGranted();
+      });
+      $('cookies').getElement('span[data-reject]').addEvent('click', function(e){
+        $('cookies').addClass('selected');
+        storage.setItem('cookie', 'no');
+        storage.setItem('cookiedate', new Date().getTime());
+      });
+    } else {
+      if(storage.getItem('cookie') == 'yes'){
+        allConsentGranted();
+      }
     }
   }
 })(window,document);
